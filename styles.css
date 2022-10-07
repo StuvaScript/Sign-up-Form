@@ -37,9 +37,14 @@ main {
     justify-content: space-evenly;
 }
 
+.content > p {
+    padding: 30px;
+}
+
 form {
     background: white;
-    padding: 20px;
+    padding: 10px 25px;
+    height: 200px;
 
     position: relative;
 }
@@ -49,13 +54,18 @@ form > *:not(button) {
 }
 
 .wrapper > div {
-    padding: 5px;
-    font-size: 0.8rem;
+    padding: 5px 0px;
+    font-size: 0.7rem;
 
     display: flex;
+}
+
+.wrapper > div div {
+    margin-right: 50px;
 }
 
 button {
     position: absolute;
     bottom: -50px;
+    margin-left: 5px;
 }
