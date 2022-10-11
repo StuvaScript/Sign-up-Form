@@ -34,6 +34,20 @@ main {
     width: 40%;
 }
 
+.logo {
+    background: rgba(0, 0, 0, 0.356);
+    height: 100px;
+    color: white;
+    font-size: 3rem;
+    position: relative;
+    top: 18%;
+    font-family: 'Courgette', cursive;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .content {
     width: 60%;
     height: 100%;
@@ -59,7 +73,8 @@ main {
 
 .content > div > p:first-child {
     position: relative;
-    top: 80px
+    top: 80px;
+    width: 90%;
 }
 
 .content > p:last-child {
