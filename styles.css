@@ -41,21 +41,26 @@ main {
     background-position: center;
     width: 40%;
     height: 100%;
-    color: white;
     position: relative;
 }
 
 .logo {
     font-family: 'Courgette', cursive;
-    background: rgba(0, 0, 0, 0.356);
+    /* background: rgba(0, 0, 0, 0.356); */
+    background: rgba(255, 255, 255, 0.517);
     height: 100px;
     font-size: 3rem;
     position: relative;
-    top: 18%;
+    top: 15%;
+    color: rgb(0, 0, 0);
 
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.logo > img {
+    height: 5rem;
 }
 
 .credit {
@@ -64,6 +69,20 @@ main {
     font-size: 0.8rem;
     position: absolute;
     bottom: 1px;
+    color: white;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.credit2 {
+    height: 30px;
+    width: 100%;
+    font-size: 0.8rem;
+    position: absolute;
+    bottom: 17px;
+    color: white;
 
     display: flex;
     justify-content: center;
@@ -153,11 +172,56 @@ label {
 
 input {
     padding: 7px;
-    width: 200px;
+    width: 250px;
     max-width: 350px;
     border-radius: 3px;
     border: 1px solid var(--border-color);
 }
+
+input:focus {
+    outline: 1px solid blue;
+    box-shadow: 2px 2px 5px rgb(182, 182, 182);
+}
+
+input:valid {
+    outline: 1px solid green;
+}
+
+.wrapper > div div:first-child input:valid + span:after {
+    content: '✓';
+    color: green;
+    position: absolute;
+    font-size: 1.8rem;;
+    left: 15px;
+}
+
+.wrapper > div div:last-child input:valid + span:after {
+    content: '✓';
+    color: green;
+    position: absolute;
+    font-size: 1.8rem;;
+    left: 315px;
+}
+
+.wrapper > div div:first-child input:invalid + span:after {
+    content: '✘';
+    color: red;
+    position: absolute;
+    font-size: 1.4rem;;
+    left: 19px;
+}
+
+.wrapper > div div:last-child input:invalid + span:after {
+    content: '✘';
+    color: red;
+    position: absolute;
+    font-size: 1.4rem;;
+    left: 319px;
+}
+
+/* input:invalid {
+    outline: 1px solid red;
+} */
 
 button {
     background: var(--button-color);

@@ -13,8 +13,10 @@
     <body>
         <main>
             <div class="image">
-                <div class="logo">Horse Head</div>
+                <div class="logo"><img src="./images/knight.png" alt="Horse Head logo">Horse Head</div>
                 <div class="credit">Photo by&nbsp;<a href="https://unsplash.com/@dominik_photography" target="_blank">Dominik Vanyi</a>&nbsp;on&nbsp;<a href="https://unsplash.com/" target="_blank">Unsplash</a>&nbsp;
+                </div>
+                <div class="credit2">Chess icon created by&nbsp;<a href="https://www.flaticon.com/authors/darius_dan/enchant" target="_blank">Darius Dan</a>&nbsp;at&nbsp;<a href="https://www.flaticon.com/" target="_blank">Flaticon</a>
                 </div>
             </div>
             <div class="content">
@@ -32,36 +34,73 @@
                             <div>
                                 <label for="first_name">*FIRST NAME</label>
                                 <br>
-                                <input type="text" name="first_name" id="first_name" autocomplete="given-name" aria-label="required" required>
+                                <input type="text" 
+                                name="first_name" 
+                                id="first_name" 
+                                autocomplete="given-name" 
+                                aria-label="given-name required" 
+                                pattern="[A-Za-z ]*" 
+                                required>
+                                <span></span>
                             </div>
                             <div>
                                 <label for="last_name">*LAST NAME</label>
                                 <br>
-                                <input type="text" name="last_name" id="last_name" autocomplete="family-name" aria-label="required" required>
+                                <input type="text" 
+                                name="last_name" 
+                                id="last_name" 
+                                autocomplete="family-name" 
+                                aria-label="family-name required" 
+                                pattern="[A-Za-z ]*" 
+                                required>
+                                <span></span>
                             </div>
                         </div>
                         <div>
                             <div>
                                 <label for="email">*EMAIL</label>
                                 <br>
-                                <input type="email" name="email" id="email" autocomplete="email" aria-label="required" required>
+                                <input type="email" 
+                                name="email" 
+                                id="email" 
+                                autocomplete="email" 
+                                aria-label="required" 
+                                required>
+                                <span></span>
                             </div>
                             <div>
-                                <label for="phone">PHONE NUMBER</label>
+                                <label for="phone">PHONE NUMBER (optional)</label>
                                 <br>
-                                <input type="tel" name="phone" id="phone" autocomplete="tel">
+                                <input type="tel" 
+                                name="phone" 
+                                id="phone" 
+                                autocomplete="tel"
+                                pattern="[\d]*">
+                                <span></span>
                             </div>
                         </div>
                         <div>
                             <div>
                                 <label for="pass">*PASSWORD</label>
                                 <br>
-                                <input type="password" name="pass" id="pass" autocomplete="new-password" aria-label="required" required>
+                                <input type="password" 
+                                name="pass" 
+                                id="pass" 
+                                autocomplete="new-password" 
+                                aria-label="required" 
+                                required>
+                                <span></span>
                             </div>
                             <div>
                                 <label for="pass">*CONFIRM PASSWORD</label>
                                 <br>
-                                <input type="password" name="pass" id="pass" autocomplete="new-password" aria-label="required" required>
+                                <input type="password" 
+                                name="pass" 
+                                id="pass" 
+                                autocomplete="new-password" 
+                                aria-label="confirm-password required" 
+                                required>
+                                <span></span>
                             </div>
                         </div>
                     </div>
