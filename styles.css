@@ -9,6 +9,14 @@
     --main-color: rgba(255, 255, 255, 0.978);
     --secondary-color: #1ce;
     --border-color: #E5E7EB;
+    --button-color: #702c36;
+}
+
+a,
+a:hover,
+a:visited,
+a:active {
+    color: inherit;
 }
 
 body {
@@ -32,16 +40,30 @@ main {
     background-size: cover;
     background-position: center;
     width: 40%;
+    height: 100%;
+    color: white;
+    position: relative;
 }
 
 .logo {
+    font-family: 'Courgette', cursive;
     background: rgba(0, 0, 0, 0.356);
     height: 100px;
-    color: white;
     font-size: 3rem;
     position: relative;
     top: 18%;
-    font-family: 'Courgette', cursive;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.credit {
+    height: 30px;
+    width: 100%;
+    font-size: 0.8rem;
+    position: absolute;
+    bottom: 1px;
 
     display: flex;
     justify-content: center;
@@ -73,14 +95,26 @@ main {
 
 .content > div > p:first-child {
     position: relative;
+    top: 160px;
+    width: 90%;
+}
+
+.content > div > p:last-child {
+    position: relative;
     top: 80px;
     width: 90%;
 }
 
-.content > p:last-child {
+.content > p {
     font-size: .95rem;
     position: relative;
-    top: 2%;
+    top: 70px;
+}
+
+.content > p > a {
+    color: var(--button-color);
+    text-decoration: none;
+    font-weight: bold;
 }
 
 form {
@@ -88,11 +122,12 @@ form {
     padding: 10px 45px;
     height: 250px;
     box-shadow: 5px 5px 5px rgba(146, 146, 146, 0.243);
+    position: relative;
+    top: 50px;
 
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    position: relative;
 }
 
 form > p {
@@ -125,6 +160,16 @@ input {
 }
 
 button {
+    background: var(--button-color);
+    color: white;
+    padding: 15px 50px;
     position: absolute;
-    bottom: -50px;
+    bottom: -80px;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 1px 3px 5px rgb(182, 182, 182);
+}
+
+button:hover {
+    cursor: pointer;
 }
