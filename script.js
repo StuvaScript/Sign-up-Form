@@ -20,13 +20,13 @@ function validate() {
 
         if (pass.value && confirmPass.value) {
             if (pass.value === confirmPass.value) {
-                pass.classList.remove('invalid');
+                pass.classList.remove('invalid', 'no_match');
                 pass.classList.add('valid');
                 confirmPass.classList.remove('invalid');
                 confirmPass.classList.add('valid');
             } else {
                 pass.classList.remove('valid');
-                pass.classList.add('invalid');
+                pass.classList.add('invalid', 'no_match');
                 confirmPass.classList.remove('valid');
                 confirmPass.classList.add('invalid');
             }
