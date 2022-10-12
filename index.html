@@ -34,24 +34,24 @@
                             <div>
                                 <label for="first_name">*FIRST NAME</label>
                                 <br>
-                                <input type="text" 
+                                <input class="user_input"
+                                type="text" 
                                 name="first_name" 
                                 id="first_name" 
                                 autocomplete="given-name" 
                                 aria-label="given-name required" 
-                                pattern="[A-Za-z ]*" 
                                 required>
                                 <span></span>
                             </div>
                             <div>
                                 <label for="last_name">*LAST NAME</label>
                                 <br>
-                                <input type="text" 
+                                <input class="user_input"
+                                type="text" 
                                 name="last_name" 
                                 id="last_name" 
                                 autocomplete="family-name" 
                                 aria-label="family-name required" 
-                                pattern="[A-Za-z ]*" 
                                 required>
                                 <span></span>
                             </div>
@@ -60,7 +60,8 @@
                             <div>
                                 <label for="email">*EMAIL</label>
                                 <br>
-                                <input type="email" 
+                                <input class="user_input" 
+                                type="email" 
                                 name="email" 
                                 id="email" 
                                 autocomplete="email" 
@@ -71,11 +72,12 @@
                             <div>
                                 <label for="phone">PHONE NUMBER (optional)</label>
                                 <br>
-                                <input type="tel" 
+                                <input class="user_input" 
+                                type="tel" 
                                 name="phone" 
                                 id="phone" 
                                 autocomplete="tel"
-                                pattern="[\d]*">
+                                pattern="[\d+-.() ]*">
                                 <span></span>
                             </div>
                         </div>
@@ -83,7 +85,8 @@
                             <div>
                                 <label for="pass">*PASSWORD</label>
                                 <br>
-                                <input type="password" 
+                                <input class="user_input" 
+                                type="password" 
                                 name="pass" 
                                 id="pass" 
                                 autocomplete="new-password" 
@@ -92,13 +95,14 @@
                                 <span></span>
                             </div>
                             <div>
-                                <label for="pass">*CONFIRM PASSWORD</label>
+                                <label for="confirm_pass">*CONFIRM PASSWORD</label>
                                 <br>
-                                <input type="password" 
-                                name="pass" 
-                                id="pass" 
+                                <input class="user_input" 
+                                type="password" 
+                                name="confirm_pass" 
+                                id="confirm_pass" 
                                 autocomplete="new-password" 
-                                aria-label="confirm-password required" 
+                                aria-label="confirm_password required" 
                                 required>
                                 <span></span>
                             </div>

@@ -183,11 +183,15 @@ input:focus {
     box-shadow: 2px 2px 5px rgb(182, 182, 182);
 }
 
-input:valid {
+.valid {
     outline: 1px solid green;
 }
 
-.wrapper > div div:first-child input:valid + span:after {
+.invalid {
+    outline: 1px solid red;
+}
+
+.wrapper > div div:first-child .valid + span:after {
     content: '✓';
     color: green;
     position: absolute;
@@ -195,7 +199,7 @@ input:valid {
     left: 15px;
 }
 
-.wrapper > div div:last-child input:valid + span:after {
+.wrapper > div div:last-child .valid + span:after {
     content: '✓';
     color: green;
     position: absolute;
@@ -203,7 +207,7 @@ input:valid {
     left: 315px;
 }
 
-.wrapper > div div:first-child input:invalid + span:after {
+.wrapper > div div:first-child .invalid + span:after {
     content: '✘';
     color: red;
     position: absolute;
@@ -211,17 +215,13 @@ input:valid {
     left: 19px;
 }
 
-.wrapper > div div:last-child input:invalid + span:after {
+.wrapper > div div:last-child .invalid + span:after {
     content: '✘';
     color: red;
     position: absolute;
     font-size: 1.4rem;;
     left: 319px;
 }
-
-/* input:invalid {
-    outline: 1px solid red;
-} */
 
 button {
     background: var(--button-color);
